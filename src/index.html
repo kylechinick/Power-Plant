@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Power Plant</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Power Plant Fighter's Arena</h1>
+      <p>May the best plant win...</p>
+    </div>
+    <main class="container">
+      <h2>Choose Your Fighter</h2>
+      <form  id="player-choice-form">
+        <label for="damaging-dandelion"
+          >Damaging Dandelion
+          <input
+            type="radio"
+            name="survey"
+            id="damaging-dandelion"
+            value="damaging-dandelion"
+          />
+        </label>
+
+        <label for="scrappy-sunflower"
+          >Scrappy Sunflower
+          <input
+            type="radio"
+            name="survey"
+            id="scrappy-sunflower"
+            value="scrappy-sunflower"
+          />
+        </label>
+        <label for="rad-rose"
+          >Rad Rose
+          <input type="radio" name="survey" id="rad-rose" value="rad-rose" />
+        </label>
+        <button type="submit" id="submit">Submit</button>
+      </form>
+
+      <div id="fighter-choice-container">
+        <h3>Player Choice:</h3>
+        <p id="fighter-choice"></p>
+        <p class="player-fighter-stats"></p>
+        <button>Attack!</button>
+      </div>
+      <div id="opponent-choice">
+        <h3>Opponent Choice:</h3>
+        <p>Rad Rose!</p>
+        <p class="opponent-fighter-stats"></p>
+      </div>
+    </main>
+  </body>
+</html>
